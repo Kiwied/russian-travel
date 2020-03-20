@@ -1,4 +1,5 @@
 @import url('fonts/fonts.css');
+@import url('vendor/normalize.css');
 
 html {
   width: 1024px;
@@ -11,6 +12,7 @@ html {
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -33,4 +35,46 @@ html {
 
 .header__lang_underline {
   text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  align-self: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.lead__title {
+  font-size: 96px;
+  line-height: 93px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.lead__subtitle {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 65px;
+}
+
+.lead__caption {
+  display: flex;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-top: 16px;
 }
