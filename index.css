@@ -78,3 +78,41 @@ html {
   align-self: flex-start;
   margin-top: 16px;
 }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 80px;
+  width: 90%;
+}
+
+.intro__title {
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 59px;
+  margin: 0;
+}
+
+.intro__content-row {
+  font-size: 14px;
+  line-height: 24px;
+  width: 75%;
+  margin: 48px 0 24px;
+}
+
+.intro__text {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.intro__list-item {
+  list-style: none;
+}
+
+.photo-grid {
+  display: grid;
+}
