@@ -1,0 +1,36 @@
+@import url('fonts/fonts.css');
+
+html {
+  width: 1024px;
+}
+
+.page {
+  margin: 0 auto;
+  font-family: Inter, Arial, sans-serif;
+  background-color: #2A2C2F;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 90%;
+  position: relative;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.header__lang {
+  font-size: 24px;
+  line-height: 23px;
+  text-decoration: none;
+  color: white;
+  margin-left: 18px;
+}
+
+.header__lang_underline {
+  text-decoration: underline;
+}
