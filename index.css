@@ -33,10 +33,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 .header {
   max-width: 1184px;
   position: relative;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   align-self: center;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   padding-top: 30px;
   margin: 0 auto;
 }
@@ -52,6 +55,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   text-decoration: none;
   color: white;
   margin-left: 18px;
+  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
 }
 
@@ -61,6 +65,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .header__lang:active {
   opacity: 1;
+  -webkit-transition: 0s;
   transition: 0s;
 }
 
@@ -69,12 +74,16 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 }
 
 .lead {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   position: relative;
   max-width: 985px;
   align-self: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin: 48px auto 0;
 }
 
@@ -102,6 +111,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 }
 
 .lead__caption {
+  display: -webkit-box;
   display: flex;
   font-size: 10px;
   line-height: 1.2;
@@ -113,8 +123,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .intro {
   margin: 0 auto;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   position: relative;
   padding-top: 80px;
   max-width: 985px;
@@ -160,10 +173,10 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   display: grid;
   max-width: 1184px;
   padding-top: 102px;
-  /*grid-template-columns: repeat(auto-fit, 284px);*/
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   grid-gap: 16px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .photo-grid__item {
@@ -173,8 +186,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 .places {
   margin: 0 auto;
   max-width: 984px;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   padding-top: 92px;
 }
 
@@ -186,8 +202,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .place {
   width: 100%;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   margin-bottom: 72px;
 }
 
@@ -196,8 +215,10 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 }
 
 .place__row {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-bottom: 60px;
 }
 
@@ -231,9 +252,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   margin: 0;
   color: white;
+  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
 }
 
@@ -243,6 +266,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .place__url:active {
   opacity: 1;
+  -webkit-transition: 0s;
   transition: 0s;
 }
 
@@ -269,9 +293,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 .video {
   padding-top: 102px;
   margin: 0 auto;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   max-width: 1184px;
 }
 
@@ -300,7 +328,8 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   align-self: normal;
   grid-template-columns: repeat(auto-fit, 583px);
   grid-gap: 18px;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .video__item {
@@ -315,6 +344,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   width: 100%;
   height: 100%;
   opacity: .5;
+  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   position: absolute;
   border-radius: 5px;
@@ -322,9 +352,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .video__text {
   position: absolute;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
   height: 100%;
   color: white;
 }
@@ -366,22 +400,31 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 .comments {
   margin: 0 auto;
   padding-top: 102px;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   max-width: 1184px;
 }
 
 .comments__container {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   width: 100%;
   margin-top: 72px;
 }
 
 .comment {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   max-width: 382px;
   margin-right: 19px;
 }
@@ -411,9 +454,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .cover {
   position: relative;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   max-width: 1184px;
   height: 594px;
   margin: 102px auto 0;
@@ -425,9 +472,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 }
 
 .cover__container {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   max-width: 1184px;
   height: 594px;
 }
@@ -436,18 +487,24 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   opacity: .3;
   width: 100%;
   height: 100%;
+  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cover__text {
   width: 100%;
   height: 100%;
   position: absolute;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   color: white;
 }
 
@@ -471,9 +528,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 }
 
 .footer {
+  display: -webkit-box;
   display: flex;
   max-width: 1184px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   padding: 160px 0 48px;
   margin: 0 auto;
 }
@@ -482,10 +541,12 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
   display: flex;
 }
 
 .footer__list-item {
+  display: -webkit-box;
   display: flex;
   margin-right: 18px;
 }
@@ -498,6 +559,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   text-decoration: none;
   color: white;
   font-size: 24px;
+  -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
 }
 
@@ -507,6 +569,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
 .footer__link:active {
   opacity: 1;
+  -webkit-transition: 0s;
   transition: 0s;
 }
 
@@ -684,14 +747,18 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   }
 
   .comments__container {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
   }
 
   .comment {
     margin-bottom: 48px;
     margin-right: 0;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
 
   .comment:last-of-type {
@@ -699,11 +766,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   }
 
   .comment__image {
-    order: -2;
+    -webkit-box-ordinal-group: -1;
+            order: -2;
   }
 
   .comment__author {
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+            order: -1;
     margin: 16px 0 24px;
   }
 
@@ -799,7 +868,8 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
   .photo-grid__item {
     min-height: 232px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .places {
@@ -839,8 +909,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   }
 
   .place__row {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     margin-bottom: 32px;
   }
 
@@ -901,15 +974,19 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   }
 
   .comments__container {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
     margin-top: 48px;
   }
 
   .comment {
     margin-bottom: 48px;
     margin-right: 0;
-    align-items: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
 
   .comment:last-of-type {
@@ -917,11 +994,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   }
 
   .comment__image {
-    order: -2;
+    -webkit-box-ordinal-group: -1;
+            order: -2;
   }
 
   .comment__author {
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+            order: -1;
     margin: 16px 0 24px;
   }
 
@@ -956,11 +1035,15 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
   .footer {
     padding: 64px 0 24px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 
   .footer__list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 
   .footer__list-item {
@@ -1001,7 +1084,8 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
   .photo-grid__item {
     min-height: 192px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .place__title {
