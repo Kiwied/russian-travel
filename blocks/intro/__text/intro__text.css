@@ -1,0 +1,9 @@
+@import url('_span/intro__text_span.css');
+
+.intro__text {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 0;
+  margin: 0;
+}

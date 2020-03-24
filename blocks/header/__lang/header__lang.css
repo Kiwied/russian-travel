@@ -1,0 +1,29 @@
+@import url('_underline/header__lang_underline.css');
+
+.header__lang {
+  font-size: 24px;
+  line-height: 23px;
+  text-decoration: none;
+  color: white;
+  margin-left: 18px;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.header__lang:hover {
+  opacity: .7;
+}
+
+.header__lang:active {
+  opacity: 1;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+@media all and (min-width : 320px) and (max-width : 767px) {
+  .header__lang {
+    font-size: 18px;
+    line-height: 17px;
+    margin-left: 16px;
+  }
+}

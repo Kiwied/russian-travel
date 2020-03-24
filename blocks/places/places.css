@@ -1,0 +1,32 @@
+@import url('__list/places__list.css');
+
+.places {
+  margin: 0 auto;
+  max-width: 984px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding-top: 92px;
+}
+
+@media screen and (min-width : 1024px) and (max-width: 1279px) {
+  .places {
+    max-width: 928px;
+	padding-top: 102px;
+  }
+}
+
+@media all and (min-width : 768px) and (max-width : 1023px) {
+  .places {
+    max-width: 720px;
+	padding-top: 102px;
+  }
+}
+
+@media all and (min-width : 320px) and (max-width : 767px) {
+  .places {
+    padding-top: 64px;
+  }
+}

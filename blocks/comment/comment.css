@@ -1,0 +1,30 @@
+@import url('__author/comment__author.css');
+@import url('__image/comment__image.css');
+@import url('__quote/comment__quote.css');
+
+.comment {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  max-width: 382px;
+  margin-right: 19px;
+}
+
+.comment:last-of-type {
+  margin-right: 0;
+}
+
+@media all and (max-width : 1023px) {
+  .comment {
+    margin-bottom: 48px;
+    margin-right: 0;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .comment:last-of-type {
+    margin-bottom: 0;
+  }
+}

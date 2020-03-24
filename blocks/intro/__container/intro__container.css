@@ -1,0 +1,16 @@
+.intro__container {
+  max-width: 683px;
+  align-self: flex-start;
+}
+
+@media screen and (min-width : 1024px) and (max-width: 1279px) {
+  .intro__container {
+    max-width: 692px;
+  }
+}
+
+@media all and (min-width : 768px) and (max-width : 1023px) {
+  .intro__container {
+    max-width: 100%;
+  }
+}

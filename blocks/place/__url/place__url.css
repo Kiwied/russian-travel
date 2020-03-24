@@ -1,0 +1,21 @@
+.place__url {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin: 0;
+  color: white;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.place__url:hover {
+  opacity: .7;
+}
+
+.place__url:active {
+  opacity: 1;
+  -webkit-transition: 0s;
+  transition: 0s;
+}

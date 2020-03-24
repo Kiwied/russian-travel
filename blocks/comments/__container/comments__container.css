@@ -1,0 +1,24 @@
+.comments__container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 72px;
+}
+
+@media all and (max-width : 1023px) {
+  .comments__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (min-width : 320px) and (max-width : 767px) {
+  .comments__container {
+    margin-top: 48px;
+  }
+}
