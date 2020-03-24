@@ -1,9 +1,18 @@
 @import url('fonts/fonts.css');
 @import url('vendor/normalize.css');
 
-html {
+/*html {
+  width: 768px;
+}*/
+
+/*html {
+  width: 320px;
+}*/
+
+/*html {
   width: 1024px;
-}
+}*/
+
 /*
 div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   outline: 0.5px solid red;
@@ -30,6 +39,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   justify-content: space-between;
   padding-top: 30px;
   margin: 0 auto;
+}
+
+.header__logo {
+  width: 177px;
+  height: 52px;
 }
 
 .header__lang {
@@ -71,6 +85,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   text-align: center;
   font-weight: 900;
   margin: 0;
+  white-space: pre-line;
   text-rendering: optimizeLegibility;
 }
 
@@ -79,13 +94,11 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   line-height: 36px;
   max-width: 583px;
   text-align: center;
-  margin-top: 46px;
-  margin-bottom: 65px;
+  margin: 48px 0 78px;
 }
 
 .lead__image {
   width: 984px;
-  /*max-width: 554px;*/
 }
 
 .lead__caption {
@@ -95,7 +108,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   align-self: flex-start;
-  margin-top: 16px;
+  margin: 10.87px 0 0;
 }
 
 .intro {
@@ -246,7 +259,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  margin: 0 0 24px;
+  margin: 0 0 36px;
 }
 
 .place__paragraph:last-of-type {
@@ -269,6 +282,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   line-height: 78px;
   text-align: center;
   margin: 0;
+  white-space: pre-line;
   text-rendering: optimizeLegibility;
 }
 
@@ -443,7 +457,7 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   line-height: 78px;
   text-align: center;
   max-width: 1094.27px;
-  height: 65px;
+  height: 69px;
   margin: 274px 0 134px;
   text-rendering: optimizeLegibility;
 }
@@ -504,12 +518,20 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 }
 
 @media screen and (min-width : 1024px) and (max-width: 1279px) {
-  .header, .lead, .intro, .photo-grid, .places, .video, .comments {
+  .header, .lead, .intro, .photo-grid, .places, .video, .comments, .footer {
     max-width: 928px;
+  }
+
+  .lead__subtitle {
+    margin: 46px 0 65px;
   }
 
   .lead__image {
     width: 928px;
+  }
+
+  .lead__caption {
+    margin: 16px 0 0;
   }
 
   .intro__container {
@@ -518,6 +540,10 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
   .photo-grid {
     grid-gap: 14px;
+  }
+
+  .places {
+    padding-top: 102px;
   }
 
   .place__title {
@@ -533,6 +559,10 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
     width: 456px;
   }
 
+  .place__paragraph {
+    margin: 0 0 24px;
+  }
+
   .place__row {
     margin-bottom: 40px;
   }
@@ -543,8 +573,13 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
   }
 
   .video__container {
+    margin-top: 72px;
     grid-template-columns: repeat(auto-fit, 456px);
     grid-gap: 16px;
+  }
+
+  .video__subtitle {
+    margin: 18px 0 35px 30px;
   }
 
   .content-title {
@@ -553,10 +588,484 @@ div, a, h1, h2, h3, h4, h5, p, li, ul, nav, blockquote, img, section {
 
   .cover__title {
     width: 50%;
+    height: 65.28px;
     margin: 211px 0 171.72px;
   }
 
   .cover, .cover__container {
     height: 562px;
+  }
+}
+
+@media all and (min-width : 768px) and (max-width : 1023px) {
+  .header, .lead, .intro, .photo-grid, .places, .video, .comments, .footer {
+    max-width: 720px;
+  }
+
+  .lead__subtitle {
+    margin: 48px 0 78px;
+  }
+
+  .lead__image {
+    width: 768px;
+  }
+
+  .lead__caption {
+    margin: 16px 0 0;
+  }
+
+  .intro__container {
+    max-width: 100%;
+  }
+
+  .places {
+    padding-top: 102px;
+  }
+
+  .place {
+    margin-bottom: 81px;
+  }
+
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .place__image {
+    width: 340px;
+    height: 340px;
+  }
+
+  .place__paragraphs, .place__website {
+    width: 352px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0 0 24px;
+  }
+
+  .place__row {
+    margin-bottom: 40px;
+  }
+
+  .content-title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .video__item {
+    max-width: 352px;
+    height: 200px;
+  }
+
+  .video__container {
+    margin-top: 56px;
+    grid-template-columns: repeat(auto-fit, 352px);
+    grid-gap: 16px;
+  }
+
+  .video__icon-play {
+    top: 24px;
+    left: 24px;
+  }
+
+  .video__title {
+    font-size: 24px;
+    line-height: 26px;
+    width: 90%;
+    margin: 8px 0 0 30px;
+  }
+
+  .video__subtitle {
+    margin: 12px 0 24px 30px;
+  }
+
+  .comments__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comment {
+    margin-bottom: 48px;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .comment:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .comment__image {
+    order: -2;
+  }
+
+  .comment__author {
+    order: -1;
+    margin: 16px 0 24px;
+  }
+
+  .comment__quote {
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .cover, .cover__container {
+    height: 500px;
+  }
+
+  .cover__title {
+    height: unset;
+    width: 70%;
+    margin: 165px 0 45px;
+  }
+
+  .footer {
+    padding: 102px 0 24px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media all and (min-width : 320px) and (max-width : 767px) {
+  .header, .lead, .intro, .photo-grid, .video, .comments, .footer {
+    max-width: 343px;
+  }
+
+  .header {
+    padding-top: 16px;
+  }
+
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+
+  .header__lang {
+    font-size: 18px;
+    line-height: 17px;
+    margin-left: 16px;
+  }
+
+  .lead__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 8px 0 31px;
+  }
+
+  .lead__image {
+    width: 375px;
+  }
+
+  .lead__caption {
+    margin: 8px 0 0;
+  }
+
+  .intro {
+    padding-top: 64px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .intro__content-row {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .intro__list-item {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .photo-grid {
+    padding-top: 64px;
+    grid-template-columns: repeat(auto-fit, 343px);
+    grid-gap: 15px;
+  }
+
+  .photo-grid__item {
+    min-height: 232px;
+    object-fit: cover;
+  }
+
+  .places {
+    padding-top: 64px;
+  }
+
+  .place {
+    margin-bottom: 48px;
+  }
+
+  .place__title {
+    min-width: 343px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .place__website {
+    display: none;
+  }
+
+  .place__paragraphs {
+    max-width: 343px;
+    margin: 24px auto 0;
+  }
+
+  .place__paragraph {
+    max-width: 343px;
+    margin: 0 0 24px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .place__image {
+    width: 375px;
+    height: 375px;
+  }
+
+  .place__row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .content-title {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .content-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .video {
+    padding-top: 64px;
+  }
+
+  .content-subtitle {
+    margin-top: 16px;
+  }
+
+  .video__container {
+    margin-top: 24px;
+  }
+
+  .video__item {
+    max-width: 343px;
+    height: 200px;
+  }
+
+  .video__container {
+    grid-template-columns: repeat(auto-fit, 343px);
+    grid-gap: 8px;
+  }
+
+  .video__icon-play {
+    top: 24px;
+    left: 24px;
+  }
+
+  .video__duration {
+    margin-left: 24px;
+  }
+
+  .video__title {
+    font-size: 24px;
+    line-height: 26px;
+    width: 100%;
+    margin: 8px 0 0 24px;
+  }
+
+  .video__subtitle {
+    margin: 8px 0 24px 24px;
+  }
+
+  .comments {
+    padding-top: 64px;
+  }
+
+  .comments__container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+  }
+
+  .comment {
+    margin-bottom: 48px;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .comment:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .comment__image {
+    order: -2;
+  }
+
+  .comment__author {
+    order: -1;
+    margin: 16px 0 24px;
+  }
+
+  .comment__quote {
+    margin: 0;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .cover, .cover__container {
+    height: 272px;
+  }
+
+  .cover {
+    margin-top: 48px;
+  }
+
+  .cover__title {
+    height: unset;
+    width: 60%;
+    margin: 104px 0 7px;
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .cover__subtitle {
+    width: 80%;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: pre-line;
+  }
+
+  .footer {
+    padding: 64px 0 24px;
+    flex-direction: column;
+  }
+
+  .footer__list {
+    flex-direction: column;
+  }
+
+  .footer__list-item {
+    margin: 0 0 32px;
+  }
+
+  .footer__list-item:last-of-type {
+    margin: 0;
+  }
+
+  .footer__link {
+    font-size: 24px;
+  }
+
+  .footer__copyright {
+    align-self: baseline;
+    margin-top: 48px;
+  }
+}
+
+@media all and (min-width : 320px) and (max-width : 374px) {
+  .header, .lead, .intro, .photo-grid, .video, .comments, .footer, .place__paragraphs {
+    max-width: 288px;
+  }
+
+  .lead__subtitle {
+    margin-bottom: 32px;
+  }
+
+  .lead__image {
+    width: 320px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(auto-fit, 288px);
+    grid-gap: 8px;
+  }
+
+  .photo-grid__item {
+    min-height: 192px;
+    object-fit: cover;
+  }
+
+  .place__title {
+    min-width: 288px;
+  }
+
+  .place__image {
+    width: 320px;
+    height: 320px;
+  }
+
+  .video__item {
+    max-width: 288px;
+    height: 192px;
+  }
+
+  .video__container {
+    grid-template-columns: repeat(auto-fit, 288px);
+    grid-gap: 8px;
+  }
+
+  .video__icon-play {
+    top: 16px;
+    left: 16px;
+  }
+
+  .video__duration {
+    margin-left: 16px;
+  }
+
+  .video__title {
+    font-size: 24px;
+    line-height: 26px;
+    width: 100%;
+    margin: 8px 0 0 16px;
+  }
+
+  .video__subtitle {
+    margin: 8px 0 24px 16px;
+  }
+
+  .comment__image {
+    width: 96px;
+    height: 96px;
+  }
+
+  .comment__author {
+    margin-top: 17px;
+  }
+
+  .cover {
+    margin-top: 64px;
+  }
+
+  .cover, .cover__container {
+    height: 216px;
+  }
+
+  .cover__title {
+    margin: 64px 0 7px;
+    width: 75%;
+  }
+
+  .cover__subtitle {
+    width: 100%;
   }
 }
