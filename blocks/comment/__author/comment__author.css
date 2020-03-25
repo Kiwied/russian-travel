@@ -14,7 +14,7 @@
   }
 }
 
-@media all and (min-width : 320px) and (max-width : 374px) {
+@media all and (max-width : 374px) {
   .comment__author {
     margin-top: 17px;
   }

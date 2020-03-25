@@ -1,5 +1,7 @@
 .video__text {
   position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;

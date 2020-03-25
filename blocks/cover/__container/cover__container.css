@@ -6,8 +6,27 @@
           flex-direction: column;
   -webkit-box-align: center;
           align-items: center;
-  max-width: 1184px;
+  width: 100%;
   height: 594px;
+  background-image: url('../../../images/cover.jpg');
+  background-size: cover;
+}
+
+.cover__container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: .3;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+
+.cover__container:hover::before {
+  opacity: .8;
 }
 
 @media screen and (min-width : 1024px) and (max-width: 1279px) {
@@ -22,13 +41,13 @@
   }
 }
 
-@media all and (min-width : 320px) and (max-width : 767px) {
+@media all and (max-width : 767px) {
   .cover__container {
     height: 272px;
   }
 }
 
-@media all and (min-width : 320px) and (max-width : 374px) {
+@media all and (max-width : 374px) {
   .cover__container {
     height: 216px;
   }

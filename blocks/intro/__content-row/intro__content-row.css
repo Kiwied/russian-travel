@@ -4,7 +4,7 @@
   margin: 48px 0 24px;
 }
 
-@media all and (min-width : 320px) and (max-width : 767px) {
+@media all and (max-width : 767px) {
   .intro__content-row {
     font-size: 16px;
     line-height: 27px;

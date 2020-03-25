@@ -4,9 +4,14 @@
   line-height: 78px;
   text-align: center;
   max-width: 1094.27px;
-  height: 69px;
   margin: 274px 0 134px;
   text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width : 1280px) {
+  .cover__title {
+    height: 69px;
+  }
 }
 
 @media screen and (min-width : 1024px) and (max-width: 1279px) {
@@ -19,15 +24,13 @@
 
 @media all and (min-width : 768px) and (max-width : 1023px) {
   .cover__title {
-    height: unset;
     white-space: pre-line;
     margin: 165px 0 45px;
   }
 }
 
-@media all and (min-width : 320px) and (max-width : 767px) {
+@media all and (max-width : 767px) {
   .cover__title {
-    height: unset;
     white-space: pre-line;
     margin: 104px 0 7px;
     font-size: 32px;
@@ -35,7 +38,7 @@
   }
 }
 
-@media all and (min-width : 320px) and (max-width : 374px) {
+@media all and (max-width : 374px) {
   .cover__title {
     margin: 64px 0 7px;
   }
