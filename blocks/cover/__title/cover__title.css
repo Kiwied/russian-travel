@@ -4,21 +4,14 @@
   line-height: 78px;
   text-align: center;
   max-width: 1094.27px;
-  margin: 274px 0 134px;
+  margin: 274px 0 125px;
   text-rendering: optimizeLegibility;
-}
-
-@media screen and (min-width : 1280px) {
-  .cover__title {
-    height: 69px;
-  }
 }
 
 @media screen and (min-width : 1024px) and (max-width: 1279px) {
   .cover__title {
     white-space: pre-line;
-    height: 65.28px;
-    margin: 211px 0 171.72px;
+    margin: 211px 0 80px;
   }
 }
 

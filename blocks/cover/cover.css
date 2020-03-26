@@ -20,7 +20,7 @@
   background: #2A2C2F;
 }
 
-@media all (max-width : 1184px) {
+@media all and (max-width : 1184px) {
   .cover {
     width: 100%;
   }

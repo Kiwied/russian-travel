@@ -10,6 +10,7 @@
   height: 594px;
   background-image: url('../../../images/cover.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 .cover__container::before {
@@ -19,7 +20,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: black;
+  background: #2A2C2F;
   opacity: .3;
   -webkit-transition: opacity .3s ease-in-out;
   transition: opacity .3s ease-in-out;
