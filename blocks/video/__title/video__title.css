@@ -1,24 +1,18 @@
 .video__title {
-  width: 70%;
   font-weight: bold;
   font-size: 36px;
   line-height: 39px;
   margin: 12px 0 0 30px;
   text-rendering: optimizeLegibility;
+  white-space: pre-line;
 }
 
 @media all and (max-width : 1023px) {
   .video__title {
     font-size: 24px;
     line-height: 26px;
-    width: 90%;
     margin: 8px 0 0 24px;
-  }
-}
-
-@media all and (max-width : 767px) {
-  .video__title {
-    width: 100%;
+    white-space: normal;
   }
 }
 

@@ -27,7 +27,7 @@
 @media all and (max-width : 767px) {
   .video__container {
     margin-top: 24px;
-	grid-template-columns: repeat(auto-fit, 343px);
+  	grid-template-columns: repeat(auto-fit, 343px);
     grid-gap: 8px;
   }
 }
